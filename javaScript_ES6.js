@@ -1,6 +1,6 @@
 "use strict"
 
-function testVar() {
+/* function testVar() {
     var a = 30;
     if(true){
         var a = 50;
@@ -31,4 +31,33 @@ colors.push('black');
 colors.push('silver');
 colors.push('dark_blue');
 
-console.log(colors);
+console.log(colors); */
+
+
+class User{
+    constructor(username, email, password){
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+
+    register(){
+        console.log(this.username+' is now registered');
+    }
+}
+let bob = new User('bob','bob@gmail.com', '12345');
+bob.register();
+
+
+
+class Member extends User{
+    constructor(username, email, password, memberPackage){
+        super(username, email, password);
+        this.memberPackage = memberPackage;
+    }
+    getPackage(){
+        console.log(this.username+' is subscribed to the '+this.package+' package.');
+    }
+}
+let mike = new Member('mike','mike@gmail.com','123','Standard');
+mike.getPackage();
