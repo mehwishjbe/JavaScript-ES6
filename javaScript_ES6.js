@@ -117,7 +117,7 @@ greets('Jbe'); */
 
 
 
-//SPREAD OPERATORS
+/* //SPREAD OPERATORS
 
 let args = [1,2,3,4,5];
 let args1 = [6,7,8,9,10];
@@ -128,6 +128,37 @@ function test(){
 
 }
 
-/* test.apply(null, args); */
+//test.apply(null, args);
 test(...args);
-test(...args,...args1);
+test(...args,...args1); */
+
+
+
+//SET & MAP
+let myArray = [12,45,7,78];
+let mySet = new Set(myArray);
+
+mySet.add('100');
+mySet.add({a: 1, b: 2});
+
+mySet.delete(12);
+
+//mySet.clear();
+
+mySet.add('10');
+mySet.add('34');
+mySet.add('50');
+
+//console.log(mySet);
+//console.log(mySet.size);
+
+mySet.forEach(function(val){
+    console.log(val);
+})
+
+let myMap = new Map([['a1','hello'],['b2','goodbye']]);
+
+myMap.set('c3', 'foodie');
+myMap.delete('b2');
+console.log(myMap);
+console.log(myMap.size);
