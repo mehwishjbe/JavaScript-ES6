@@ -164,7 +164,7 @@ console.log(myMap);
 console.log(myMap.size); */
 
 
-//WEAK SET
+/* //WEAK SET
 
 let carWeakSet = new WeakSet();
 
@@ -189,4 +189,32 @@ let car3 = {
 carWeakSet.add(car2);
 carWeakSet.add(car1);
 
-console.log(carWeakSet);
+console.log(carWeakSet); */
+
+let carWeakMap = new WeakMap();
+
+let key1 = {
+    id: 1
+}
+
+let car1 = {
+    make: 'BMW',
+    model: 'BMW 2020',
+    color: 'Silver'
+}
+let key2 = {
+    id: 2
+}
+
+let car2 = {
+    make: 'Toyota',
+    model: 'Corola',
+    color: 'White'
+}
+
+carWeakMap.set(key1,car1);
+carWeakMap.set(key2,car2);
+
+carWeakMap.delete(key1);
+
+console.log(carWeakMap);
