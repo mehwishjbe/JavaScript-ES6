@@ -191,6 +191,9 @@ carWeakSet.add(car1);
 
 console.log(carWeakSet); */
 
+
+/* //WEAKMAP
+
 let carWeakMap = new WeakMap();
 
 let key1 = {
@@ -217,4 +220,34 @@ carWeakMap.set(key2,car2);
 
 carWeakMap.delete(key1);
 
-console.log(carWeakMap);
+console.log(carWeakMap); */
+
+
+//ARROW FUNCTION
+
+let add = function(a, b){
+    let sum = a + b;
+    console.log(sum);
+}
+add(2,2);
+
+
+let add1 = (a, b) => {
+    let sum = a + b;
+    console.log(sum);
+}
+add(11,2);
+
+function Checking(prefix){
+    this.prefix = prefix;
+}
+
+Checking.prototype.prefixArray = function(arr){
+    let that = this;
+    return arr.map(function(x){
+        console.log(that.prefix + x);
+    });
+}
+
+let pre = new Checking('Hello ');
+pre.prefixArray(['Meh', 'Jbe']);
