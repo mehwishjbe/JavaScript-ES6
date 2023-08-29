@@ -63,7 +63,7 @@ let mike = new Member('mike','mike@gmail.com','123','Standard');
 mike.getPackage(); */
 
 
-//Template Literals
+/* //Template Literals
 
 let name = 'Meh';
 
@@ -74,4 +74,31 @@ function makeUpperCase(word){
 let template =`<h1>${makeUpperCase('hello')} ${name}</h1>
 <p> This is a simple template</p>`;
 
-document.getElementById('templatehtml').innerHTML = template;
+document.getElementById('templatehtml').innerHTML = template; */
+
+
+//NEW STRING AND NUMBER METHODS
+
+let theString = 'hello, this is javasrcipt ES6 and concept of new string and & number methods'
+
+console.log(theString.startsWith('hello'));
+console.log(theString.endsWith('methods'));
+console.log(theString.includes('and'));
+
+//hex
+console.log(0xFF);
+//binary
+console.log(0b1010010010001);
+//octal
+console.log(0o543);
+
+console.log(Number.isFinite(3));
+console.log(Number.isFinite(-3));
+console.log(Number.isFinite(Infinity));
+
+console.log(Number.isNaN(NaN));
+console.log(Number.isNaN('string'));
+
+console.log(Number.isInteger(453));
+console.log(Number.isInteger(Infinity));
+console.log(Number.isInteger('string'));
