@@ -104,15 +104,30 @@ console.log(Number.isInteger(Infinity));
 console.log(Number.isInteger('string')); */
 
 
-//Default Params
+/* //DEFAULT PARAMETERS
 function greet($greeting = 'Meh') {
     console.log($greeting);
-    
 }
 greet();
 
 function greets($greeting) {
     console.log($greeting);
-    
 }
-greets('Jbe');
+greets('Jbe'); */
+
+
+
+//SPREAD OPERATORS
+
+let args = [1,2,3,4,5];
+let args1 = [6,7,8,9,10];
+
+function test(){
+    console.log(args);
+    console.log(args+ ',' +args1);
+
+}
+
+/* test.apply(null, args); */
+test(...args);
+test(...args,...args1);
