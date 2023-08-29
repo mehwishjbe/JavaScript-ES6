@@ -253,7 +253,7 @@ let pre = new Checking('Hello ');
 pre.prefixArray(['Meh', 'Jbe']); */
 
 
-//PROMISES -- operation that has not completed yet but expects to be complete in future
+/* //PROMISES -- operation that has not completed yet but expects to be complete in future
 //Immediatley Resolved
 
 //var myPromise = Promise.resolve('Foo');
@@ -290,4 +290,26 @@ console.log(data);
     
 }).catch(function(err){
     console.log(err);
-});
+}); */
+
+
+//GENERATOR
+
+function *g1(){
+    console.log('Hello');
+    yield 'Yield 1 Meh..';
+    console.log('World');
+    yield 'Yield 2 Meh..';
+    return 'Returned...'
+}
+
+var g = g1();
+
+
+//console.log(g.next().value);
+//console.log(g.next().value);
+//console.log(g.next().value);
+
+for (let val of g){
+    console.log(val);
+}
