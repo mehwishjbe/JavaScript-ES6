@@ -225,7 +225,7 @@ console.log(carWeakMap); */
 
 //ARROW FUNCTION
 
-let add = function(a, b){
+/* let add = function(a, b){
     let sum = a + b;
     console.log(sum);
 }
@@ -250,4 +250,44 @@ Checking.prototype.prefixArray = function(arr){
 }
 
 let pre = new Checking('Hello ');
-pre.prefixArray(['Meh', 'Jbe']);
+pre.prefixArray(['Meh', 'Jbe']); */
+
+
+//PROMISES -- operation that has not completed yet but expects to be complete in future
+//Immediatley Resolved
+
+//var myPromise = Promise.resolve('Foo');
+//myPromise.then((res) => console.log(res));
+
+
+function getData(method, url){
+    return new Promise(function( resolve, reject){
+       var xhr = new XMLHttpRequest();
+       xhr.open(method, url);
+       xhr.onLoad = function(){
+        if(this.status >= 200 && this.status < 300){
+            resolve(xhr.response);
+        }else{
+            reject({
+                status: this.status,
+                statusText: XMLHttpRequest.statusText
+            });
+        }
+       }
+       xhr.onerror = function(){
+        reject({
+            status: this.status,
+            statusText: XMLHttpRequest.statusText
+        });
+       };
+       xhr.send();
+    });
+}
+
+getData('GET','https://jsonplaceholder.typicode.com/todos').then(function (data) {
+
+console.log(data);
+    
+}).catch(function(err){
+    console.log(err);
+});
