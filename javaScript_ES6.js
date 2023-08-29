@@ -134,7 +134,7 @@ test(...args,...args1); */
 
 
 
-//SET & MAP
+/* //SET & MAP
 let myArray = [12,45,7,78];
 let mySet = new Set(myArray);
 
@@ -161,4 +161,32 @@ let myMap = new Map([['a1','hello'],['b2','goodbye']]);
 myMap.set('c3', 'foodie');
 myMap.delete('b2');
 console.log(myMap);
-console.log(myMap.size);
+console.log(myMap.size); */
+
+
+//WEAK SET
+
+let carWeakSet = new WeakSet();
+
+let car1 = {
+    make: 'Honda',
+    model: 'Civic',
+    color: 'black'
+}
+
+let car2 = {
+    make: 'Toyota',
+    model: 'Corola',
+    color: 'White'
+}
+
+let car3 = {
+    make: 'BMW',
+    model: 'BMW 2020',
+    color: 'Silver'
+}
+
+carWeakSet.add(car2);
+carWeakSet.add(car1);
+
+console.log(carWeakSet);
