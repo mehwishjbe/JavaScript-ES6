@@ -34,7 +34,7 @@ colors.push('dark_blue');
 console.log(colors); */
 
 
-class User{
+/* class User{
     constructor(username, email, password){
         this.username = username;
         this.email = email;
@@ -51,13 +51,27 @@ bob.register();
 
 
 class Member extends User{
-    constructor(username, email, password, memberPackage){
+    constructor(username, email, password, memberpkg){
         super(username, email, password);
-        this.memberPackage = memberPackage;
+        this.memberpkg = memberpkg;
     }
     getPackage(){
-        console.log(this.username+' is subscribed to the '+this.package+' package.');
+        console.log(this.username+' is subscribed to the '+this.memberpkg+' package.');
     }
 }
 let mike = new Member('mike','mike@gmail.com','123','Standard');
-mike.getPackage();
+mike.getPackage(); */
+
+
+//Template Literals
+
+let name = 'Meh';
+
+function makeUpperCase(word){
+    return word.toUpperCase();
+}
+
+let template =`<h1>${makeUpperCase('hello')} ${name}</h1>
+<p> This is a simple template</p>`;
+
+document.getElementById('templatehtml').innerHTML = template;
