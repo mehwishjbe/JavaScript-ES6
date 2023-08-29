@@ -79,7 +79,7 @@ document.getElementById('templatehtml').innerHTML = template; */
 
 //NEW STRING AND NUMBER METHODS
 
-let theString = 'hello, this is javasrcipt ES6 and concept of new string and & number methods'
+/* let theString = 'hello, this is javasrcipt ES6 and concept of new string and & number methods'
 
 console.log(theString.startsWith('hello'));
 console.log(theString.endsWith('methods'));
@@ -101,4 +101,18 @@ console.log(Number.isNaN('string'));
 
 console.log(Number.isInteger(453));
 console.log(Number.isInteger(Infinity));
-console.log(Number.isInteger('string'));
+console.log(Number.isInteger('string')); */
+
+
+//Default Params
+function greet($greeting = 'Meh') {
+    console.log($greeting);
+    
+}
+greet();
+
+function greets($greeting) {
+    console.log($greeting);
+    
+}
+greets('Jbe');
