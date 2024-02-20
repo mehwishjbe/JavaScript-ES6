@@ -355,7 +355,13 @@ console.log(num); */
 
 //Indexof
 //to find index in array using value by indexOf
-const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'cat'];
+/* const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'cat'];
 console.log(subjects.indexOf('cat')); // if value not match in array list then -1 will return
 // indexOf start search from start when match it returns the index number, no matter value exist more than once in array list
-console.log(subjects.indexOf('cat', 3)); // 3 means start search from index 3
+console.log(subjects.indexOf('cat', 3)); // 3 means start search from index 3 */
+
+
+
+const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'cat', 'pencil',];
+console.log(subjects.lastIndexOf('pencil')); //start search in decending order
+console.log(subjects.lastIndexOf('pencil', 6));
