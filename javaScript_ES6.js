@@ -421,7 +421,33 @@ let array3 = [...array1,...array2]
 console.log(array3); */
 
 
-// AT() method
+/* // AT() method
 const array1 = [5,34,50,89,109]
 let indix = 2;
-console.log(` ${indix} ${array1.at(indix)}`);
+console.log(` ${indix} ${array1.at(indix)}`); */
+
+
+/* let array1 = [ 1,2,3,4,5,6,7]
+array1.forEach(function(element){
+    console.log(element)
+}) */
+
+/* const numbers = [10,20,30,40,50]
+let sum = 0;
+numbers.forEach(function(number){
+        sum += number;
+})
+console.log(sum); */
+
+const numbers = [10,20,30,40,50];
+let square = 0;
+numbers.forEach(function(number){
+    console.log(number*number);
+})
+
+const num = [10,20,30,40,50];
+let squaredNumbers = [];
+numbers.forEach(function(number){
+    squaredNumbers.push(number * number);
+})
+console.log(squaredNumbers);
