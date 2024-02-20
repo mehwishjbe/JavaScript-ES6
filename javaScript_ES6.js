@@ -401,5 +401,5 @@ console.log(animals.find((finden) => { //find method needs predicate & arguement
 
 let array1 = ['kangroo','cat', 'lion']
 let array2 = ['dog','hamster', 'deer']
-
-console.log(array1.concat(array2));
+let array3 = array1.concat(array2)
+console.log(array3);
