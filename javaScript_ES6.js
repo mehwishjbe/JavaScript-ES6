@@ -319,7 +319,7 @@ console.log(arrays[arrays.length-1]); */ //to see the last value of array
 
 
 // Declaring Arrays as OBJECTS
-const num = new Array(1,2,3,4,5,6,7,8,9,10,11);
+//const num = new Array(1,2,3,4,5,6,7,8,9,10,11);
 //console.log(num[num.length-1]);
 
 
@@ -340,5 +340,14 @@ console.log(num); */
 
 
 // Unshift method 
-num.shift() //remove first element
+/* num.shift() //remove first element
+console.log(num); */
+
+
+//changing value using index
+const num = [0,1,2,3,4,5,6,7,8,9,10];
+num[3] = 33;
+num[2] = "MJ";
+num[1] = true;
+num[0] = {num:56};
 console.log(num);
