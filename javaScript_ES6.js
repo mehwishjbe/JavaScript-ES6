@@ -345,9 +345,17 @@ console.log(num); */
 
 
 //changing value using index
-const num = [0,1,2,3,4,5,6,7,8,9,10];
+/* const num = [0,1,2,3,4,5,6,7,8,9,10];
 num[3] = 33;
 num[2] = "MJ";
 num[1] = true;
 num[0] = {num:56};
-console.log(num);
+console.log(num); */
+
+
+//Indexof
+//to find index in array using value by indexOf
+const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'cat'];
+console.log(subjects.indexOf('cat')); // if value not match in array list then -1 will return
+// indexOf start search from start when match it returns the index number, no matter value exist more than once in array list
+console.log(subjects.indexOf('cat', 3)); // 3 means start search from index 3
