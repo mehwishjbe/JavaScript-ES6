@@ -335,5 +335,10 @@ console.log(num); */
 
 
 // Pop method
-num.pop()
+/* num.pop() //remove last element
+console.log(num); */
+
+
+// Unshift method 
+num.shift() //remove first element
 console.log(num);
