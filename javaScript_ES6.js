@@ -295,7 +295,7 @@ console.log(data);
 
 //GENERATOR
 
-function *g1(){
+/* function *g1(){
     console.log('Hello');
     yield 'Yield 1 Meh..';
     console.log('World');
@@ -303,13 +303,13 @@ function *g1(){
     return 'Returned...'
 }
 
-var g = g1();
-
-
+var g = g1(); */
 //console.log(g.next().value);
 //console.log(g.next().value);
 //console.log(g.next().value);
-
-for (let val of g){
+/* for (let val of g){
     console.log(val);
-}
+} */
+
+
+// Arrays in JavaScript
