@@ -368,6 +368,32 @@ console.log(subjects.lastIndexOf('pencil', 6)); */
 
 
 
-const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'pencil',];
+/* const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'pencil',];
 console.log(subjects.includes('cat')); // search in the array list if value exist or not
-console.log(subjects.includes('cat',3));
+console.log(subjects.includes('cat',3)); //includes only works on primitive datatype */
+
+
+const animals = [{
+    name: 'cat',
+    color:'white',
+    eye:'brown',
+    legs:4
+},{
+    name: 'lion',
+    color:'brown',
+    eye:'black',
+    legs:4
+},{
+    name: 'kangroo',
+    color:'gray',
+    eye:'black',
+    legs:2
+}];
+
+/* console.log(animals.find(function(finden){ //find method needs predicate & arguement
+    return finden.legs === 2;
+})); */
+
+console.log(animals.find((finden) => { //find method needs predicate & arguement
+    return finden.legs === 2;
+}));
