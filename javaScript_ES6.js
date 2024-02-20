@@ -398,8 +398,16 @@ console.log(animals.find((finden) => { //find method needs predicate & arguement
     return finden.legs === 2;
 })); */
 
+//concat method
+/* let array1 = ['kangroo','cat', 'lion']
+let array2 = ['dog','hamster', 'deer']
+let array3 = array1.concat(array2)
+console.log(array3); */
 
+
+//Slice method
 let array1 = ['kangroo','cat', 'lion']
 let array2 = ['dog','hamster', 'deer']
 let array3 = array1.concat(array2)
 console.log(array3);
+console.log(array3.splice(2,3)) //before 2 and after 3 values will be removed.
