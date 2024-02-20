@@ -373,7 +373,7 @@ console.log(subjects.includes('cat')); // search in the array list if value exis
 console.log(subjects.includes('cat',3)); //includes only works on primitive datatype */
 
 
-const animals = [{
+/* const animals = [{
     name: 'cat',
     color:'white',
     eye:'brown',
@@ -390,10 +390,16 @@ const animals = [{
     legs:2
 }];
 
-/* console.log(animals.find(function(finden){ //find method needs predicate & arguement
+console.log(animals.find(function(finden){ //find method needs predicate & arguement
     return finden.legs === 2;
-})); */
+}));
 
 console.log(animals.find((finden) => { //find method needs predicate & arguement
     return finden.legs === 2;
-}));
+})); */
+
+
+let array1 = ['kangroo','cat', 'lion']
+let array2 = ['dog','hamster', 'deer']
+
+console.log(array1.concat(array2));
