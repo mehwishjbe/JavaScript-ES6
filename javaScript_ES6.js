@@ -319,7 +319,11 @@ console.log(arrays[arrays.length-1]); */ //to see the last value of array
 
 
 // Declaring Arrays as OBJECTS
-const num = new Array(0,1,2,3,4,5,6,7,8,9,10);
-console.log(num[num.length-1]);
+const num = new Array(0,1,2,3,4,5,6,7,8,9,10,11);
+/* console.log(num[num.length-1]); */
 
 
+// Push method
+num.push(12);
+num.push(13)
+console.log(num);
