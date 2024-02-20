@@ -362,6 +362,12 @@ console.log(subjects.indexOf('cat', 3)); // 3 means start search from index 3 */
 
 
 
-const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'cat', 'pencil',];
+/* const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'cat', 'pencil',];
 console.log(subjects.lastIndexOf('pencil')); //start search in decending order
-console.log(subjects.lastIndexOf('pencil', 6));
+console.log(subjects.lastIndexOf('pencil', 6)); */
+
+
+
+const subjects = ['laptop', 'table', 'cat', 'Fernsehen', 'pencil', 'mobile', 'pencil',];
+console.log(subjects.includes('cat')); // search in the array list if value exist or not
+console.log(subjects.includes('cat',3));
