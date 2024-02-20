@@ -330,5 +330,10 @@ console.log(num); */
 
 
 // Unshift method 
-num.unshift(0); //to add element at the start
+/* num.unshift(0); //to add element at the start
+console.log(num); */
+
+
+// Pop method
+num.pop()
 console.log(num);
