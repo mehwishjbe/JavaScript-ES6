@@ -439,7 +439,7 @@ numbers.forEach(function(number){
 })
 console.log(sum); */
 
-const numbers = [10,20,30,40,50];
+/* const numbers = [10,20,30,40,50];
 let square = 0;
 numbers.forEach(function(number){
     console.log(number*number);
@@ -450,4 +450,9 @@ let squaredNumbers = [];
 numbers.forEach(function(number){
     squaredNumbers.push(number * number);
 })
-console.log(squaredNumbers);
+console.log(squaredNumbers); */
+
+
+// Join Method
+let student = [ 'S', 'm', 'i', 't', 'h'];
+console.log(student.join('')); // '' used to remove the , of array
