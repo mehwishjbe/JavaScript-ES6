@@ -454,5 +454,14 @@ console.log(squaredNumbers); */
 
 
 // Join Method
-let student = [ 'S', 'm', 'i', 't', 'h'];
-console.log(student.join('')); // '' used to remove the , of array
+/* let student = [ 'S', 'm', 'i', 't', 'h'];
+console.log(student.join('')); // '' used to remove the , of array */
+
+
+
+// Filter method
+let words = ['devine', 'spiritual', 'calling', 'awakening', 'mistery', 'callback', 'upheld'];
+
+console.log(words.filter(word => {
+    return word.length > 6;
+}))
