@@ -460,8 +460,13 @@ console.log(student.join('')); // '' used to remove the , of array */
 
 
 // Filter method
-let words = ['devine', 'spiritual', 'calling', 'awakening', 'mistery', 'callback', 'upheld'];
+/* let words = ['devine', 'spiritual', 'calling', 'awakening', 'mistery', 'callback', 'upheld'];
 
 console.log(words.filter(word => {
     return word.length > 6;
-}))
+})); */
+
+
+// Map method
+const arr = [ 11, 12, 13, 14, 15]; 
+console.log((arr.map(array => array * 2))); // map each element of array to operation
