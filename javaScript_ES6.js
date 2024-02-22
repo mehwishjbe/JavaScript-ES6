@@ -527,15 +527,23 @@ let result = fruits.filter(function(fruit){
 console.log(result); */
 
 
-let fruits = [
+/* let fruits = [
     {name: 'cucumber', type:'vegetable', quantity:7, price: 4},
     {name: 'banana', type:'fruit', quantity:2, price: 9},
     {name: 'celery', type:'vegetable', quantity:8, price: 10},
     {name: 'orange', type:'fruit', quantity:9, price: 12},
 ];
-
 let filtered = fruits.filter(function(fruit){
     return fruit.type === 'fruit' && fruit.price > 10 && fruit.quantity < 15 ;
 });
+console.log(filtered); */
 
-console.log(filtered);
+
+let numbers = [5, 15, 25, 35, 45, 55, 65, 75, 85, 95];
+
+let filteredNumbers = [];
+
+filteredNumbers.push(numbers.filter(function(num){
+    return num > 50;
+}));
+console.log(filteredNumbers);
