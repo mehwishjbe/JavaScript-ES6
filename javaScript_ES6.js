@@ -479,9 +479,20 @@ let resultArr = arr1.map(function(arra){
 console.log(resultArr); */
 
 
-var cars = [ 
+/* var cars = [ 
     {mode:'Buick', price:'Cheap'},
     {mode:'Camaro', price:'Expensive'}
 ];
+console.log((cars.map(car => car.price))); */
 
-console.log((cars.map(car => car.price)));
+
+var images = [ 
+    { height:'34px', width:'39px'},
+    { height:'54px', width:'19px'},
+    { height:'83px', width:'75px'},
+];
+
+var height = images.map(function(image){
+    return image.height;
+})
+console.log(height);
