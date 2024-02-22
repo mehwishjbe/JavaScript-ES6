@@ -498,7 +498,7 @@ var height = images.map(function(image){
 console.log(height); */
 
 
-var trips = [ 
+/* var trips = [ 
     { distance:34, time:10},
     { distance:90, time:50},
     { distance:59, time:25},
@@ -508,4 +508,20 @@ let speed = trips.map(function(trip){
     return trip.distance / trip.time;
 });
 
-console.log(speed);
+console.log(speed); */
+
+
+//Filter
+
+let fruits = [
+    {name: 'cucumber', type:'vegetable'},
+    {name: 'banana', type:'fruit'},
+    {name: 'celery', type:'vegetable'},
+    {name: 'orange', type:'fruit'},
+];
+
+let result = fruits.filter(function(fruit){
+    return fruit.type === 'fruit';
+});
+
+console.log(result);
