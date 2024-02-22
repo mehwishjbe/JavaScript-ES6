@@ -513,7 +513,7 @@ console.log(speed); */
 
 //Filter
 
-let fruits = [
+/* let fruits = [
     {name: 'cucumber', type:'vegetable'},
     {name: 'banana', type:'fruit'},
     {name: 'celery', type:'vegetable'},
@@ -524,4 +524,18 @@ let result = fruits.filter(function(fruit){
     return fruit.type === 'fruit';
 });
 
-console.log(result);
+console.log(result); */
+
+
+let fruits = [
+    {name: 'cucumber', type:'vegetable', quantity:7, price: 4},
+    {name: 'banana', type:'fruit', quantity:2, price: 9},
+    {name: 'celery', type:'vegetable', quantity:8, price: 10},
+    {name: 'orange', type:'fruit', quantity:9, price: 12},
+];
+
+let filtered = fruits.filter(function(fruit){
+    return fruit.type === 'fruit' && fruit.price > 10 && fruit.quantity < 15 ;
+});
+
+console.log(filtered);
