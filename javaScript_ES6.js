@@ -486,7 +486,7 @@ console.log(resultArr); */
 console.log((cars.map(car => car.price))); */
 
 
-var images = [ 
+/* var images = [ 
     { height:'34px', width:'39px'},
     { height:'54px', width:'19px'},
     { height:'83px', width:'75px'},
@@ -495,4 +495,17 @@ var images = [
 var height = images.map(function(image){
     return image.height;
 })
-console.log(height);
+console.log(height); */
+
+
+var trips = [ 
+    { distance:34, time:10},
+    { distance:90, time:50},
+    { distance:59, time:25},
+];
+
+let speed = trips.map(function(trip){
+    return trip.distance / trip.time;
+});
+
+console.log(speed);
