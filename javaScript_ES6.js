@@ -539,11 +539,27 @@ let filtered = fruits.filter(function(fruit){
 console.log(filtered); */
 
 
-let numbers = [5, 15, 25, 35, 45, 55, 65, 75, 85, 95];
+/* let numbers = [5, 15, 25, 35, 45, 55, 65, 75, 85, 95];
 
 let filteredNumbers = [];
 
 filteredNumbers.push(numbers.filter(function(num){
     return num > 50;
 }));
-console.log(filteredNumbers);
+console.log(filteredNumbers); */
+
+
+
+let users = [
+    {id:1, admin:true},
+    {id:2, admin:false},
+    {id:3, admin:false},
+    {id:4, admin:true},
+    {id:5, admin:true},
+    {id:6, admin:false},
+];
+
+let filteredUsers = users.filter(function(user){
+    return user.admin === true;
+});
+console.log(filteredUsers);
