@@ -468,7 +468,7 @@ console.log(words.filter(word => {
 
 
 // Map method
-const arr = [ 11, 12, 13, 14, 15]; 
+/* const arr = [ 11, 12, 13, 14, 15]; 
 console.log((arr.map(array => array * 2))); // map each element of array to operation & create new 
 
 //both ways works the same
@@ -476,5 +476,12 @@ const arr1 = [ 11, 12, 13, 14, 15];
 let resultArr = arr1.map(function(arra){
     return arra*2;
 });
-console.log(resultArr);
+console.log(resultArr); */
 
+
+var cars = [ 
+    {mode:'Buick', price:'Cheap'},
+    {mode:'Camaro', price:'Expensive'}
+];
+
+console.log((cars.map(car => car.price)));
